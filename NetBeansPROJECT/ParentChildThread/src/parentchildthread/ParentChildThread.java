@@ -48,6 +48,7 @@ public class ParentChildThread {
     
 }
 /*run:
+
 main  5
 MinkyThread:	10
 ChinkyThread:	10
