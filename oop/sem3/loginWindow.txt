@@ -1,0 +1,14 @@
+class loginWindow
+{
+	string mobileNo;
+	public:
+	void get_mobileNo()
+	{
+		return mobileNo;
+	}
+	void display()
+	{
+		cout<<"enter mobileNo";
+		cin>>mobileNo;
+	}
+}

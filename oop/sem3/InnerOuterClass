@@ -1,0 +1,61 @@
+//kumari saumya singh
+//roll no.=1913097
+//date of creation=27-02-2021
+
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+
+class person
+{
+	char name[20];
+
+public:
+
+			class Address   //Inner Class
+			{
+				public:
+				int no;
+				char street[20];
+				char city[20];
+
+			};
+
+			Address a;
+
+			void getdata()
+			{
+				cout<<"Enter Name= ";
+				cin.getline(name,20);
+
+				cout<<"Enter HouseNo= ";
+				cin>>a.no;
+				cin.ignore();
+
+				cout<<"Enter Street Name= ";
+				cin.getline(a.street,20);
+
+				cout<<"Enter City Name= ";
+				cin.getline(a.city,20);
+			}
+
+
+			void display()
+			{
+				cout<<"\nName= "<<name;
+				cout<<"\nAddress= "<<a.no<<" "<<a.street<<" "<<a.city;
+
+			}
+};
+
+
+int main()
+{
+	person p;
+
+	p.getdata();
+	p.display();
+
+	return 0;
+}

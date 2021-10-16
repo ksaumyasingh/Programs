@@ -1,0 +1,22 @@
+class regsitrationDetailsWindow
+{
+	User X;
+	public:
+	regsitrationDetailsWindow(User usr)
+	{
+		this.X=usr;
+	}
+	void display()
+	{	
+		title("REGESTERED DETAILS");
+		goTORowCol(3,40);
+		cout<<"\n ADHARCARD NUMBER : "<<X.adharno;
+		cout<<"\n MOBILE NUMBER    : "<<X.mobileNo;
+		cout<<"\n NAME             : "<<X.name;
+		cout<<"\n AGE              : "<<X.age;
+		goTORowCol(11,1);
+		for(int i=1;i<100;i++)
+		printf("-");
+		SetConsoleTextAttribute(h,14);
+	}
+};

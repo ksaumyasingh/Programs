@@ -1,0 +1,14 @@
+class windowManager
+{
+	regsitrationDetailsWindow X;
+	public:
+	void showLoginWindow()
+	{
+		loginWindow x;
+		x.display();
+		string mobileNo;
+		mobileNo=x.get_mobileNo();
+		if(User.isUserPresent(mobileNo))
+			X.display();
+	}
+};
